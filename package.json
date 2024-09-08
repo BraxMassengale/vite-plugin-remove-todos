@@ -1,13 +1,30 @@
 {
   "name": "vite-plugin-remove-todos",
-  "version": "1.0.0",
-  "description": "A Vite plugin to remove TODO comments during build",
-  "main": "index.js",
+  "version": "1.1.0",
+  "description": "A Vite plugin to remove TODO comments during build from JS, TS, Astro, and HTML files",
+  "type": "module",
+  "main": "index.cjs",
+  "module": "index.mjs",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
   "scripts": {
+    "build": "rollup -c",
+    "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["vite", "plugin", "todo", "comments", "remove"],
-  "author": "Your Name",
+  "keywords": [
+    "vite",
+    "plugin",
+    "todo",
+    "comments",
+    "remove",
+    "html"
+  ],
+  "author": "Braxton Massengale",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -15,5 +32,8 @@
   },
   "peerDependencies": {
     "vite": "^2.0.0 || ^3.0.0 || ^4.0.0"
+  },
+  "devDependencies": {
+    "rollup": "^2.79.1"
   }
 }
