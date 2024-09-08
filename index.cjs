@@ -1,6 +1,5 @@
 'use strict';
 
-// index.js
 function removeTodos() {
   return {
     name: "vite-plugin-remove-todos",
@@ -12,10 +11,8 @@ function removeTodos() {
 
       let updatedCode = code;
 
-      if (id.endsWith(".html")) {
-        // Remove HTML comments containing TODO
-        updatedCode = updatedCode.replace(/<!--\s*TODO:[\s\S]*?-->/g, "");
-      }
+      // Remove HTML comments containing TODO
+      updatedCode = updatedCode.replace(/<!--\s*TODO:[\s\S]*?-->/g, "");
 
       // Remove single-line TODO comments
       updatedCode = updatedCode.replace(/\/\/\s*TODO:.*$/gm, "");

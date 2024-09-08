@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-remove-todos",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A Vite plugin to remove TODO comments during build from JS, TS, Astro, and HTML files",
   "type": "module",
   "main": "index.cjs",
