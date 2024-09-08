@@ -1,0 +1,19 @@
+{
+  "name": "vite-plugin-remove-todos",
+  "version": "1.0.0",
+  "description": "A Vite plugin to remove TODO comments during build",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["vite", "plugin", "todo", "comments", "remove"],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BraxMassengale/vite-plugin-remove-todos.git"
+  },
+  "peerDependencies": {
+    "vite": "^2.0.0 || ^3.0.0 || ^4.0.0"
+  }
+}
